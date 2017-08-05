@@ -155,7 +155,7 @@ To view or log issues, see [issues](https://github.com/yinyue200/onedrive-sdk-do
 
 * Nuget Package for Xamarin.Forms : [https://www.nuget.org/packages/OneDrive.Sdk.Authentication.XamarinForms](https://www.nuget.org/packages/OneDrive.Sdk.Authentication.XamarinForms)
 
-* For other, see [https://www.myget.org/feed/Packages/yinyue200](my myget feed).
+* For other, see [my myget feed](https://www.myget.org/feed/Packages/yinyue200).
 
 
 ## License
