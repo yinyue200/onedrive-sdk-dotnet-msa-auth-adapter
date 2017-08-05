@@ -56,6 +56,21 @@ msaAuthenticationProvider.AuthenticateUserAsync();
 
 AuthenticateUserAsync will perform the action of prompting the user with authentication UI.
 
+#### Xamarin.Forms
+
+```csharp
+//Don't use the code when the page is navigating
+var msaAuthenticationProvider = new Microsoft.OneDrive.Sdk.Authentication.MsaAuthenticationProvider(clientId,null, renavurl,
+        scopes,new Microsoft.OneDrive.Sdk.Authentication.CredentialCache(),new Microsoft.OneDrive.Sdk.Authentication.CredentialVault(clientId));
+msaAuthenticationProvider.WebAuthenticationUi = new Microsoft.OneDrive.Sdk.Authentication.FormsWebAuthenticationUi(this.Navigation);//"this" is a page.
+msaAuthenticationProvider.AuthenticateUserAsync();
+
+//you can get the userid : msaAuthenticationProvider.CurrentAccountSession.UserId
+//if you save the user id and use it in next session, like msaAuthenticationProvider.AuthenticateUserAsync(lastSessionUserId);
+//AuthenticateUserAsync may not be perform the action of prompting the user with authentication UI.
+
+```
+
 ### 2. Create an Azure Active Directory authentication provider
 
 ```csharp
@@ -132,11 +147,15 @@ Note: CredentialVault is not necassary if you are using `OnlineIdAuthenticationP
 
 ## Issues
 
-To view or log issues, see [issues](https://github.com/OneDrive/onedrive-sdk-dotnet-msa-auth-adapter/issues).
+To view or log issues, see [issues](https://github.com/yinyue200/onedrive-sdk-dotnet-msa-auth-adapter/issues).
 
 ## Other resources
 
 * NuGet Package: [https://www.nuget.org/packages/Microsoft.OneDriveSdk.Authentication](https://www.nuget.org/packages/Microsoft.OneDriveSDK.Authentication/)
+
+* Nuget Package for Xamarin.Forms : [https://www.nuget.org/packages/OneDrive.Sdk.Authentication.XamarinForms](https://www.nuget.org/packages/OneDrive.Sdk.Authentication.XamarinForms)
+
+* For other, see [https://www.myget.org/feed/Packages/yinyue200](my myget feed).
 
 
 ## License
