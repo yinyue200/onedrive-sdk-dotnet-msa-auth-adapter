@@ -44,12 +44,6 @@
     <Reference Include="Microsoft.Graph.Core, Version=1.7.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Microsoft.Graph.Core.1.7.0\lib\net45\Microsoft.Graph.Core.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.IdentityModel.Clients.ActiveDirectory, Version=3.17.3.35304, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Microsoft.IdentityModel.Clients.ActiveDirectory.3.17.3\lib\net45\Microsoft.IdentityModel.Clients.ActiveDirectory.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.IdentityModel.Clients.ActiveDirectory.Platform, Version=3.17.3.35304, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Microsoft.IdentityModel.Clients.ActiveDirectory.3.17.3\lib\net45\Microsoft.IdentityModel.Clients.ActiveDirectory.Platform.dll</HintPath>
-    </Reference>
     <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Newtonsoft.Json.10.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
@@ -86,9 +80,6 @@
     <Compile Include="..\OneDrive.Sdk.Authentication.Common\OAuthHelper.cs">
       <Link>OAuthHelper.cs</Link>
     </Compile>
-    <Compile Include="..\OneDrive.Sdk.Authentication.Common\Caching\AdalCredentialCache.cs">
-      <Link>Caching\AdalCredentialCache.cs</Link>
-    </Compile>
     <Compile Include="..\OneDrive.Sdk.Authentication.Common\Caching\CredentialCache.cs">
       <Link>Caching\CredentialCache.cs</Link>
     </Compile>
@@ -97,18 +88,6 @@
     </Compile>
     <Compile Include="..\OneDrive.Sdk.Authentication.Common\Caching\CredentialCacheNotificationArgs.cs">
       <Link>Caching\CredentialCacheNotificationArgs.cs</Link>
-    </Compile>
-    <Compile Include="..\OneDrive.Sdk.Authentication.Common\Caching\ITokenCache.cs">
-      <Link>Caching\ITokenCache.cs</Link>
-    </Compile>
-    <Compile Include="..\OneDrive.Sdk.Authentication.Common\Caching\ITokenCacheItem.cs">
-      <Link>Caching\ITokenCacheItem.cs</Link>
-    </Compile>
-    <Compile Include="..\OneDrive.Sdk.Authentication.Common\Caching\TokenCacheItemWrapper.cs">
-      <Link>Caching\TokenCacheItemWrapper.cs</Link>
-    </Compile>
-    <Compile Include="..\OneDrive.Sdk.Authentication.Common\Caching\TokenCacheWrapper.cs">
-      <Link>Caching\TokenCacheWrapper.cs</Link>
     </Compile>
     <Compile Include="..\OneDrive.Sdk.Authentication.Common\Web\IWebAuthenticationUi.cs">
       <Link>Web\IWebAuthenticationUi.cs</Link>
