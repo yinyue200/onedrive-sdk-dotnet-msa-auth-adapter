@@ -26,8 +26,6 @@ namespace Test.OneDrive.Sdk.Authentication.Xamarin.Android
 		
 		public static void UpdateIdValues()
 		{
-			global::Microsoft.OneDrive.Sdk.Authentication.Resource.Id.webView = global::Test.OneDrive.Sdk.Authentication.Xamarin.Android.Resource.Id.webView;
-			global::Microsoft.OneDrive.Sdk.Authentication.Resource.Layout.webform = global::Test.OneDrive.Sdk.Authentication.Xamarin.Android.Resource.Layout.webform;
 			global::Microsoft.OneDrive.Sdk.Authentication.Resource.String.ApplicationName = global::Test.OneDrive.Sdk.Authentication.Xamarin.Android.Resource.String.ApplicationName;
 			global::Xamarin.Android.NUnitLite.Resource.Id.OptionHostName = global::Test.OneDrive.Sdk.Authentication.Xamarin.Android.Resource.Id.OptionHostName;
 			global::Xamarin.Android.NUnitLite.Resource.Id.OptionPort = global::Test.OneDrive.Sdk.Authentication.Xamarin.Android.Resource.Id.OptionPort;
@@ -139,9 +137,6 @@ namespace Test.OneDrive.Sdk.Authentication.Xamarin.Android
 			// aapt resource value: 0x7f050011
 			public const int TestSuiteListView = 2131034129;
 			
-			// aapt resource value: 0x7f050012
-			public const int webView = 2131034130;
-			
 			static Id()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
@@ -166,9 +161,6 @@ namespace Test.OneDrive.Sdk.Authentication.Xamarin.Android
 			
 			// aapt resource value: 0x7f030003
 			public const int test_suite = 2130903043;
-			
-			// aapt resource value: 0x7f030004
-			public const int webform = 2130903044;
 			
 			static Layout()
 			{

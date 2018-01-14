@@ -41,14 +41,14 @@
     <AssemblyOriginatorKeyFile>..\..\build\35MSSharedLib1024.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Microsoft.Graph.Core, Version=1.4.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Microsoft.Graph.Core.1.4.0\lib\net45\Microsoft.Graph.Core.dll</HintPath>
+    <Reference Include="Microsoft.Graph.Core, Version=1.7.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.Graph.Core.1.7.0\lib\net45\Microsoft.Graph.Core.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.IdentityModel.Clients.ActiveDirectory, Version=2.29.0.1078, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Microsoft.IdentityModel.Clients.ActiveDirectory.2.29.0\lib\net45\Microsoft.IdentityModel.Clients.ActiveDirectory.dll</HintPath>
+    <Reference Include="Microsoft.IdentityModel.Clients.ActiveDirectory, Version=3.17.3.35304, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.IdentityModel.Clients.ActiveDirectory.3.17.3\lib\net45\Microsoft.IdentityModel.Clients.ActiveDirectory.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.IdentityModel.Clients.ActiveDirectory.WindowsForms, Version=2.29.0.1078, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Microsoft.IdentityModel.Clients.ActiveDirectory.2.29.0\lib\net45\Microsoft.IdentityModel.Clients.ActiveDirectory.WindowsForms.dll</HintPath>
+    <Reference Include="Microsoft.IdentityModel.Clients.ActiveDirectory.Platform, Version=3.17.3.35304, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.IdentityModel.Clients.ActiveDirectory.3.17.3\lib\net45\Microsoft.IdentityModel.Clients.ActiveDirectory.Platform.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Newtonsoft.Json.10.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
@@ -86,27 +86,6 @@
     <Compile Include="..\OneDrive.Sdk.Authentication.Common\OAuthHelper.cs">
       <Link>OAuthHelper.cs</Link>
     </Compile>
-    <Compile Include="..\OneDrive.Sdk.Authentication.Common\Business\AdalAuthenticationProviderBase.cs">
-      <Link>Business\AdalAuthenticationProviderBase.cs</Link>
-    </Compile>
-    <Compile Include="..\OneDrive.Sdk.Authentication.Common\Business\AuthenticationResultWrapper.cs">
-      <Link>Business\AuthenticationResultWrapper.cs</Link>
-    </Compile>
-    <Compile Include="..\OneDrive.Sdk.Authentication.Common\Business\BusinessAuthenticationExceptionHelper.cs">
-      <Link>Business\BusinessAuthenticationExceptionHelper.cs</Link>
-    </Compile>
-    <Compile Include="..\OneDrive.Sdk.Authentication.Common\Business\BusinessServiceInformation.cs">
-      <Link>Business\BusinessServiceInformation.cs</Link>
-    </Compile>
-    <Compile Include="..\OneDrive.Sdk.Authentication.Common\Business\IAuthenticationResult.cs">
-      <Link>Business\IAuthenticationResult.cs</Link>
-    </Compile>
-    <Compile Include="..\OneDrive.Sdk.Authentication.Common\Business\IUserInfo.cs">
-      <Link>Business\IUserInfo.cs</Link>
-    </Compile>
-    <Compile Include="..\OneDrive.Sdk.Authentication.Common\Business\UserInfoWrapper.cs">
-      <Link>Business\UserInfoWrapper.cs</Link>
-    </Compile>
     <Compile Include="..\OneDrive.Sdk.Authentication.Common\Caching\AdalCredentialCache.cs">
       <Link>Caching\AdalCredentialCache.cs</Link>
     </Compile>
@@ -131,25 +110,12 @@
     <Compile Include="..\OneDrive.Sdk.Authentication.Common\Caching\TokenCacheWrapper.cs">
       <Link>Caching\TokenCacheWrapper.cs</Link>
     </Compile>
-    <Compile Include="..\OneDrive.Sdk.Authentication.Common\Discovery Service\DiscoveryService.cs">
-      <Link>Discovery Service\DiscoveryService.cs</Link>
-    </Compile>
-    <Compile Include="..\OneDrive.Sdk.Authentication.Common\Discovery Service\DiscoveryServiceHelperBase.cs">
-      <Link>Discovery Service\DiscoveryServiceHelperBase.cs</Link>
-    </Compile>
-    <Compile Include="..\OneDrive.Sdk.Authentication.Common\Discovery Service\DiscoveryServiceResponse.cs">
-      <Link>Discovery Service\DiscoveryServiceResponse.cs</Link>
-    </Compile>
     <Compile Include="..\OneDrive.Sdk.Authentication.Common\Web\IWebAuthenticationUi.cs">
       <Link>Web\IWebAuthenticationUi.cs</Link>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Business\AuthenticationContextWrapper.cs" />
-    <Compile Include="Business\AdalAuthenticationProvider.cs" />
-    <Compile Include="Business\IAuthenticationContextWrapper.cs" />
     <Compile Include="CredentialVault.cs" />
-    <Compile Include="Discovery Service\DiscoveryServiceHelper.cs" />
     <Compile Include="Web\FormsWebDialog.cs">
       <SubType>form</SubType>
     </Compile>
@@ -168,6 +134,7 @@
     <EmbeddedResource Include="Web\FormsWebDialog.resx">
       <DependentUpon>FormsWebDialog.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="app.config" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

@@ -31,17 +31,6 @@ namespace Microsoft.OneDrive.Sdk.Authentication
         string IdToken { get; }
 
         /// <summary>
-        /// Gets a value indicating whether or not the refresh token can be used for requesting
-        /// access tokens for other resources.
-        /// </summary>
-        bool IsMultipleResourceRefreshToken { get; }
-
-        /// <summary>
-        /// Gets the refresh token for the current access token.
-        /// </summary>
-        string RefreshToken { get; }
-
-        /// <summary>
         /// Gets an identifier for the tenant from which the access token was acquired.
         /// </summary>
         string TenantId { get; }
@@ -50,27 +39,5 @@ namespace Microsoft.OneDrive.Sdk.Authentication
         /// Gets user information, such as user ID.
         /// </summary>
         IUserInfo UserInfo { get; }
-
-#if WINRT || WINDOWS_UWP
-        /// <summary>
-        /// Gets the error code if authentication failed.
-        /// </summary>
-        string Error { get; }
-
-        /// <summary>
-        /// Gets the error description if authentication failed.
-        /// </summary>
-        string ErrorDescription { get; }
-
-        /// <summary>
-        /// Gets the <see cref="AuthenticationStatus"/> of authentication.
-        /// </summary>
-        AuthenticationStatus Status { get; }
-
-        /// <summary>
-        /// Gets the authentication status code.
-        /// </summary>
-        int StatusCode { get; set; }
-#endif
     }
 }

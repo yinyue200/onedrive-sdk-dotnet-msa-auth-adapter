@@ -61,17 +61,6 @@ namespace Microsoft.OneDrive.Sdk.Authentication
         TokenCacheItem InnerCacheItem { get; }
 
         /// <summary>
-        /// Gets a value indicating whether or not the refresh token applies to multiple resources.
-        /// </summary>
-        bool IsMultipleResourceRefreshToken { get; }
-
-        /// <summary>
-        /// Gets the refresh token associated with the requested access token. Note: not
-        /// all operations will return a refresh token.
-        /// </summary>
-        string RefreshToken { get; }
-
-        /// <summary>
         /// Gets the resource.
         /// </summary>
         string Resource { get; }

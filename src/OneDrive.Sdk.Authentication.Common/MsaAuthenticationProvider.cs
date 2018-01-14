@@ -31,8 +31,6 @@ namespace Microsoft.OneDrive.Sdk.Authentication
         internal string[] scopes;
         
         private OAuthHelper oAuthHelper;
-
-        internal ICredentialVault credentialVault;
         internal IWebAuthenticationUi webAuthenticationUi;
 
 #if DESKTOP

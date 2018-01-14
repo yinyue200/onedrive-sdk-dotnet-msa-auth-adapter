@@ -123,28 +123,6 @@ namespace Microsoft.OneDrive.Sdk.Authentication
         /// </summary>
         public TokenCacheItem InnerCacheItem { get; private set; }
 
-        /// <summary>
-        /// Gets a value indicating whether or not the refresh token applies to multiple resources.
-        /// </summary>
-        public bool IsMultipleResourceRefreshToken
-        {
-            get
-            {
-                return this.InnerCacheItem.IsMultipleResourceRefreshToken;
-            }
-        }
-
-        /// <summary>
-        /// Gets the refresh token associated with the requested access token. Note: not
-        /// all operations will return a refresh token.
-        /// </summary>
-        public string RefreshToken
-        {
-            get
-            {
-                return this.InnerCacheItem.RefreshToken;
-            }
-        }
 
         /// <summary>
         /// Gets the resource.

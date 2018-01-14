@@ -260,7 +260,7 @@ namespace Microsoft.OneDrive.Sdk.Authentication
                 AccessTokenType = authenticationResult.AccessTokenType,
                 ClientId = this.clientId,
                 ExpiresOnUtc = authenticationResult.ExpiresOn,
-                RefreshToken = authenticationResult.RefreshToken,
+                RefreshToken = /*authenticationResult.*/null,
                 UserId = authenticationResult.UserInfo == null ? null : authenticationResult.UserInfo.UniqueId,
             };
         }
