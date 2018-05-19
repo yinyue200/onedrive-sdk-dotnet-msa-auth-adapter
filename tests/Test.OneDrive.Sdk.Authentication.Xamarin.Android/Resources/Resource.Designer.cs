@@ -26,7 +26,6 @@ namespace Test.OneDrive.Sdk.Authentication.Xamarin.Android
 		
 		public static void UpdateIdValues()
 		{
-			global::Microsoft.OneDrive.Sdk.Authentication.Resource.String.ApplicationName = global::Test.OneDrive.Sdk.Authentication.Xamarin.Android.Resource.String.ApplicationName;
 			global::Xamarin.Android.NUnitLite.Resource.Id.OptionHostName = global::Test.OneDrive.Sdk.Authentication.Xamarin.Android.Resource.Id.OptionHostName;
 			global::Xamarin.Android.NUnitLite.Resource.Id.OptionPort = global::Test.OneDrive.Sdk.Authentication.Xamarin.Android.Resource.Id.OptionPort;
 			global::Xamarin.Android.NUnitLite.Resource.Id.OptionRemoteServer = global::Test.OneDrive.Sdk.Authentication.Xamarin.Android.Resource.Id.OptionRemoteServer;

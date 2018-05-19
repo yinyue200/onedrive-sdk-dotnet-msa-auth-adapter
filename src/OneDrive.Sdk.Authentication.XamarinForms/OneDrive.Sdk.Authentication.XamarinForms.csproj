@@ -8,7 +8,7 @@
     <PackageLicenseUrl>https://github.com/yinyue200/onedrive-sdk-dotnet-msa-auth-adapter/blob/no_winrt/LICENSE.txt</PackageLicenseUrl>
     <RepositoryUrl>https://github.com/yinyue200/onedrive-sdk-dotnet-msa-auth-adapter</RepositoryUrl>
     <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
-    <Version>1.0.10</Version>
+    <Version>1.1.1</Version>
     <EnableDefaultEmbeddedResourceItems>False</EnableDefaultEmbeddedResourceItems>
   </PropertyGroup>
 
@@ -41,7 +41,7 @@
     <PackageReference Include="Microsoft.Graph.Core" Version="1.7.0" />
     <PackageReference Include="System.Security.Cryptography.Algorithms" Version="4.3.0" />
     <PackageReference Include="System.Security.Cryptography.Csp" Version="4.3.0" />
-    <PackageReference Include="Xamarin.Forms" Version="2.5.0.122203" />
+    <PackageReference Include="Xamarin.Forms" Version="3.0.0.482510" />
   </ItemGroup>
 
   <ItemGroup>
